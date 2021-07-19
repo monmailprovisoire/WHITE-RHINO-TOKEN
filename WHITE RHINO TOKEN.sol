@@ -1,5 +1,33 @@
-pragma solidity 0.8.3;
+/**
+ *Submitted for verification at BscScan.com on 2021-06-21
+*/
+
 // SPDX-License-Identifier: MIT
+
+/**
+
+
+██     ██ ██   ██ ██ ████████ ███████     ██████  ██   ██ ██ ███    ██  ██████      ████████  ██████  ██   ██ ███████ ███    ██ 
+██     ██ ██   ██ ██    ██    ██          ██   ██ ██   ██ ██ ████   ██ ██    ██        ██    ██    ██ ██  ██  ██      ████   ██ 
+██  █  ██ ███████ ██    ██    █████       ██████  ███████ ██ ██ ██  ██ ██    ██        ██    ██    ██ █████   █████   ██ ██  ██ 
+██ ███ ██ ██   ██ ██    ██    ██          ██   ██ ██   ██ ██ ██  ██ ██ ██    ██        ██    ██    ██ ██  ██  ██      ██  ██ ██ 
+ ███ ███  ██   ██ ██    ██    ███████     ██   ██ ██   ██ ██ ██   ████  ██████         ██     ██████  ██   ██ ███████ ██   ████ 
+                                                                                                                                
+                                                                                                                                
+Coin name: WHITE RHINO TOKEN
+Coin Symbol: WRT
+TOTAL SUPPLY: 1000000000000
+                                                                                                                
+    8% Tax over every Transfer
+    
+    2% Holders Fee
+    2% Liquidity Fee
+    4% Charity Fee + Burn Address 
+    
+*/
+
+pragma solidity 0.8.3;
+
 /*
  * @dev Provides information about the current execution context, including the
  * sender of the transaction and its data. While these are generally available
@@ -772,7 +800,7 @@ TOTAL SUPPLY: 1000000000000
     
 
  */ 
-contract momotoken is Context, IERC20, Ownable {
+contract WHITERHINOTOKEN is Context, IERC20, Ownable {
     using SafeMath for uint256;
     using Address for address;
 
@@ -790,10 +818,10 @@ contract momotoken is Context, IERC20, Ownable {
     uint256 private constant MAX = ~uint256(0);
     uint256 private _tTotal = 2000000000000 * 10**9;
     uint256 private _rTotal = (MAX - (MAX % _tTotal));
-    uint256 private _tFeeTotal = 3;
+    uint256 private _tFeeTotal;
 
-    string private _name = "momo token";
-    string private _symbol = "MOMO";
+    string private _name = "WHITE RHINO TOKEN";
+    string private _symbol = "WRT";
     uint8 private _decimals = 9;
     
     uint256 public _taxFee = 2;
@@ -1262,3 +1290,4 @@ contract momotoken is Context, IERC20, Ownable {
     }
 
 }
+ 
